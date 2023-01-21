@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="franke.c195project.controller.EditAppointment">
+   <children>
+      <Label layoutX="205.0" layoutY="23.0" text="Edit Appointment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER" layoutX="76.0" layoutY="67.0" prefHeight="266.0" prefWidth="449.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="282.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Appointment ID:" />
+            <Label text="Title:" GridPane.rowIndex="1" />
+            <Label text="Description:" GridPane.rowIndex="2" />
+            <Label text="Location:" GridPane.rowIndex="3" />
+            <Label text="Contact:" GridPane.rowIndex="4" />
+            <Label text="Type:" GridPane.rowIndex="5" />
+            <Label text="Start Date:" GridPane.rowIndex="6" />
+            <Label text="End Date:" GridPane.rowIndex="8" />
+            <Label text="Customer ID:" GridPane.rowIndex="10" />
+            <Label text="User ID:" GridPane.rowIndex="11" />
+            <TextField fx:id="editAppointAppIDTxt" disable="true" promptText="Auto Gen - Disabled" GridPane.columnIndex="1" />
+            <TextField fx:id="editAppointTitleTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="editAppointDescTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="editAppointLocationTxt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="editAppointTypeTxt" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="editAppointCustIDTxt" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="editAppointUserIDTxt" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <ComboBox fx:id="editAppointContactComBx" prefHeight="25.0" prefWidth="284.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Start Time:" GridPane.rowIndex="7" />
+            <Label text="End Time:" GridPane.rowIndex="9" />
+            <DatePicker fx:id="editAppointStDyDatePick" prefHeight="25.0" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <DatePicker fx:id="editAppointEndDyDatePick" prefHeight="25.0" prefWidth="297.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ComboBox fx:id="editAppointStTmCmBx" prefHeight="25.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <ComboBox fx:id="editAppointEndTmCmBx" prefHeight="25.0" prefWidth="321.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <Button layoutX="205.0" layoutY="347.0" mnemonicParsing="false" onAction="#onActionEditAppSave" text="Save" />
+      <Button layoutX="344.0" layoutY="347.0" mnemonicParsing="false" onAction="#onActionEditAppCancel" text="Cancel" />
+   </children>
+</AnchorPane>

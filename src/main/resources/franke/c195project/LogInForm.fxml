@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="franke.c195project.controller.LoginScreen">
+   <children>
+      <Label fx:id="loginLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="39.0" prefHeight="51.0" prefWidth="156.0" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="170.0" layoutY="158.0" text="Username:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" layoutX="172.0" layoutY="190.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="logInUserIDTxt" layoutX="301.0" layoutY="155.0" />
+      <TextField fx:id="logInPasswordTxt" layoutX="301.0" layoutY="188.0" />
+      <TextField fx:id="logInUserLocationTxt" disable="true" layoutX="226.0" layoutY="101.0" />
+      <Button fx:id="loginCancelBtn" layoutX="216.0" layoutY="243.0" mnemonicParsing="false" onAction="#onActionLogInCancel" text="Cancel" />
+      <Button fx:id="loginSubmitBtn" layoutX="324.0" layoutY="243.0" mnemonicParsing="false" onAction="#onActionLogInSubmit" text="Submit" />
+   </children>
+</AnchorPane>

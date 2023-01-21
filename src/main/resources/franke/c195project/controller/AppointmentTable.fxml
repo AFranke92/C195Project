@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="franke.c195project.controller.AppointmentTable">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" text="Appointments">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentTblview" layoutX="17.0" layoutY="111.0" prefHeight="275.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="appointmentIDCol" prefWidth="58.0" text="ID" />
+          <TableColumn fx:id="appointmentTitleCol" prefWidth="66.0" text="Title" />
+            <TableColumn fx:id="appointmentDescCol" prefWidth="66.0" text="Desc." />
+            <TableColumn fx:id="appointmentLocationCol" prefWidth="72.0" text="Location" />
+            <TableColumn fx:id="appointmentContactCol" prefWidth="74.0" text="Contact" />
+            <TableColumn fx:id="appointmentTypeCol" prefWidth="64.0" text="Type" />
+            <TableColumn fx:id="appointmentStartCol" minWidth="1.0" prefWidth="50.0" text="Start" />
+            <TableColumn fx:id="appointmentEndCol" prefWidth="49.0" text="End" />
+            <TableColumn fx:id="appointmentCustIDCol" prefWidth="65.0" text="Cust. ID" />
+            <TableColumn fx:id="appointmentUserIDCol" prefWidth="66.0" text="User ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="408.0" layoutY="89.0" text="Filter By:" />
+      <RadioButton fx:id="appointmentTableAllRdBtn" layoutX="467.0" layoutY="89.0" mnemonicParsing="false" onAction="#onActionAllApps" selected="true" text="All">
+         <toggleGroup>
+            <ToggleGroup fx:id="sourceTg" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="appointmentTableWeekRdBtn" layoutX="518.0" layoutY="89.0" mnemonicParsing="false" onAction="#onActionWeekApps" text="Week" toggleGroup="$sourceTg" />
+      <RadioButton fx:id="appointmentTableMonthRdBtn" layoutX="586.0" layoutY="89.0" mnemonicParsing="false" onAction="#onActionMonthApps" text="Month" toggleGroup="$sourceTg" />
+      <Button layoutX="219.0" layoutY="400.0" mnemonicParsing="false" onAction="#onActionAppAdd" text="Add" />
+      <Button layoutX="314.0" layoutY="400.0" mnemonicParsing="false" onAction="#onActionAppEdit" text="Edit" />
+      <Button layoutX="405.0" layoutY="400.0" mnemonicParsing="false" onAction="#onActionAppDelete" text="Delete" />
+      <Button layoutX="586.0" layoutY="425.0" mnemonicParsing="false" onAction="#onActionBackBtn" text="Back" />
+   </children>
+</AnchorPane>
