@@ -136,17 +136,29 @@ UI/UX refinements
 Unit and integration testing
 
 Author Information:
+
 Author: Abigail Franke
+
 Application version: 1.0
+
 Date: 11/16/2022
 
+
 IDE and Java Information:
+
 IDE Version: IntelliJ IDEA 2022.1 (Community Edition)
+
 Build #IC-221.5080.210, built on April 11, 2022
+
 Runtime version: 11.0.14.1+1-b2043.25 amd64
+
 VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+
 Kotlin: 221-1.6.20-release-285-IJ5080.210
+
 JDK: corretto-17.0.4.1
+
 Javafx: Javafx-sdk-18.0.1
+
 mysql connector: mysql-connector-java-8.0.31
 
