@@ -7,8 +7,6 @@ import java.time.LocalDateTime;
  * Appointment model class
  * @author
  * Abigail Franke
- * afra480@wgu.edu
- * Student Id: 010025705
  */
 public class Appointment {
 
