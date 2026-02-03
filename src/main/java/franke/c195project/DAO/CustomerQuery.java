@@ -14,8 +14,6 @@ import static franke.c195project.model.Customer.allCustomers;
  * DAO
  * @author
  * Abigail Franke
- * afra480@wgu.edu
- * Student Id: 010025705
  */
 
 public class CustomerQuery {
