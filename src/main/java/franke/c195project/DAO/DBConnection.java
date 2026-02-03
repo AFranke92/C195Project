@@ -7,8 +7,6 @@ import java.sql.*;
  * DAO
  * @author
  * Abigail Franke
- * afra480@wgu.edu
- * Student Id: 010025705
  */
 
 public abstract class DBConnection {
