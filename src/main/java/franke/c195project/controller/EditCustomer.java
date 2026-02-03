@@ -28,8 +28,6 @@ import java.util.ResourceBundle;
  * FXML controller class
  * @author
  * Abigail Franke
- * afra480@wgu.edu
- * Student Id: 010025705
  */
 
 public class EditCustomer implements Initializable {
