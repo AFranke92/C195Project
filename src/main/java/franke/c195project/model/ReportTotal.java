@@ -4,8 +4,6 @@ package franke.c195project.model;
  * Reports Total model class
  * @author
  * Abigail Franke
- * afra480@wgu.edu
- * Student Id: 010025705
  */
 public class ReportTotal {
 
